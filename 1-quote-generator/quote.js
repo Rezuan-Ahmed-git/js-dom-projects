@@ -72,3 +72,10 @@ const quotes = [
     person: 'type.fit',
   },
 ];
+
+btn.addEventListener('click', function () {
+  let randomQuoteNumber = Math.floor(Math.random() * quotes.length);
+
+  quote.innerText = quotes[randomQuoteNumber].quote;
+  author.innerText = quotes[randomQuoteNumber].person;
+});
